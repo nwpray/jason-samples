@@ -1,0 +1,14 @@
+.form-modal .header,
+.form-modal .footer{
+    background-color: #ff9933;
+    color: white;
+    border: none;
+}
+
+.form-modal .footer button{
+    margin-right: 5px;
+}
+
+.form-modal .footer button:last-child{
+    margin-right: 0;
+}

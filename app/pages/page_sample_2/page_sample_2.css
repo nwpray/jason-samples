@@ -1,0 +1,293 @@
+.hover-grow:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.social
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(73, 39, 74, 0.8);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    z-index: 150;
+}
+.social i
+{
+    color: white;
+    cursor: pointer;
+}
+
+.social a:hover
+{
+    text-decoration: none;
+}
+
+.social i:hover
+{
+    color: #e4cee4;
+}
+
+/* BODY CSS */
+body
+{
+    background: #f4decb;
+    font-family: 'Karla', sans-serif;
+}
+
+/* GLOBAL CSS */
+.shadow-bottom
+{
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.75);
+}
+
+.shadow-top
+{
+    -webkit-box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 5px -2px rgba(0,0,0,0.75);
+}
+
+.shadow-left
+{
+    -webkit-box-shadow: -8px 2px 16px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 2px 16px -9px rgba(0,0,0,0.75);
+    box-shadow: -8px 2px 16px -9px rgba(0,0,0,0.75);
+}
+
+.shadow-full
+{
+    -webkit-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+}
+
+/* HEADER CSS */
+.ni-header
+{
+    background : #f4decb;
+    height: 100px;
+    position: relative;
+}
+
+
+
+
+/* MENU CSS */
+.ni-menu
+{
+    z-index: 50;
+    background: #94618e;
+    height: 72px;
+    position:relative;
+
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.5), 0px -4px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.5), 0px -4px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.5), 0px -4px 5px -2px rgba(0,0,0,0.75);
+}
+
+.ni-menu .logo-backing
+{
+    display:inline-block;
+    position:relative;
+    top:-9px;
+    left: 15px;
+    background: #49274a;
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    z-index: 110;
+    margin-right: 45px;
+}
+
+.ni-menu .logo-backing .logo
+{
+    height: 70px;
+    width: 70px;
+}
+
+
+.ni-menu a
+{
+    padding: 25px;
+    font-size: 1.5rem;
+    color: #f8eee7;
+    cursor: pointer;
+    display:inline-block;
+    height: 100%;
+    position:relative;
+    top: -5px;
+}
+
+.ni-menu a.menu-div
+{
+    border-right:1px solid #f8eee7;
+}
+
+.ni-menu a:hover
+{
+    top: 0;
+    color: #49274a;
+    background: #f4decb;
+
+    -webkit-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.75);
+}
+
+.ni-menu .menu-right
+{
+    display:inline-block;
+    float:right;
+    padding-right: 15px;
+}
+
+.ni-menu .menu-right a
+{
+    top: 3px;
+}
+
+.ni-menu .menu-right a:hover
+{
+    top: 8px;
+}
+
+/* BODY CSS */
+.ni-body
+{
+    min-height: 400px;
+}
+
+
+
+.ni-body .credit-card
+{
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+}
+
+.ni-body .credit-card form
+{
+    width: 50%;
+    padding: 35px;
+    min-height: 400px;
+    display:inline;
+    float:right;
+}
+
+.ni-body .form-label
+{
+    display:block;
+    font-size: 2rem;
+    color:  #49274a;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.ni-body .form-control
+{
+    height: auto !important;
+    display:block !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
+    border: 1px solid rgba(0,0,0,0.3) !important;
+    font-size: 2rem !important;;
+    padding: 10px 15px !important;
+    border-radius: 3px !important;
+    line-height: normal !important;
+}
+
+.ni-body input.form-control,
+.ni-body select.form-control
+{
+    background: rgba(255, 255, 255, 0.5) !important;;
+    color:  #49274a !important;;
+}
+
+.ni-body input.form-control:focus,
+.ni-body select.form-control:focus
+{
+    outline-color: #49274a !important;;
+    border: 1px solid #49274a !important;;
+}
+
+.ni-body button.form-control
+{
+    margin-top: 40px !important;;
+}
+
+.ni-body .card-pic
+{
+    padding: 35px;
+    background: url('/assets/images/page_sample_2/self-picture.jpg') fixed no-repeat;
+    background-size: cover;
+    height: 1061px;
+    width: 50%;
+    display:block;
+    float: left;
+}
+
+/* BUTTONS */
+.ui.button.primary
+{
+    background: #49274a;
+    color: #f8eee7;
+    border:none;
+}
+
+.ui.button.primary:hover
+{
+    background: #94618e;
+}
+
+/* HR */
+.hr-1
+{
+    border: 1px solid #49274a;
+}
+
+/* FOOTER CSS */
+.ni-footer
+{
+    background: #49274a;
+    text-align: center;
+    position:relative;
+    color: #f8eee7;
+}
+.ni-footer p
+{
+    display: block;
+    text-align: center;
+}
+
+.ni-footer a{
+    color: #f8eee7;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 25px 40px;
+    display: inline-block;
+}
+
+.ni-footer .logo
+{
+    margin-top: 40px;
+    height: 100px;
+}
+
+.ni-footer .copyright
+{
+    margin-bottom: 25px;
+}
+
+.title-1
+{
+    color:  #49274a;
+    font-weight:bold;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}

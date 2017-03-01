@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="/app/directives/modal/views/form_modal/form_modal.css"/>
+<div class="ni-modal form-modal">
+    <div class="header">
+        <p>Form Modal</p>
+    </div>
+    <div class="body">
+        <form name="sample_form">
+            <div class="form-group" ng-class="{'has-error' : (sample_form.first_name.$dirty || sample_form.first_name.$touched) && sample_form.first_name.$invalid}">
+                <label class="help-block error-message">Required</label>
+                <input class="form-control" placeholder="First Name" name="first_name" ng-model="Modal.data.first_name" required/>
+            </div>
+            <div class="form-group" ng-class="{'has-error' : (sample_form.last_name.$dirty || sample_form.last_name.$touched) && sample_form.last_name.$invalid}">
+                <label class="help-block error-message">Required</label>
+                <input class="form-control" placeholder="Last Name" name="last_name" ng-model="Modal.data.last_name" required/>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <button class="btn btn-primary pull-right" ng-click="Modal.Trigger('on.submit.click', $event);">Submit</button>
+        <button class="btn btn-default pull-right" ng-click="Modal.Trigger('on.cancel.click', $event);">Cancel</button>
+        <div class="clearfix"></div>
+    </div>
+
+</div>

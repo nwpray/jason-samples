@@ -1,0 +1,9 @@
+form .error-message
+{
+    display:none;
+}
+
+form .has-error .error-message
+{
+    display: initial;
+}

@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="/app/pages/modal_sample/modal_sample.css"/>
+<div class="modal-sample container">
+    <h1>Modal Sample</h1>
+    <div class="form-group col-xs-12 col-sm-6 col-md-4">
+        <button class="btn btn-default btn-sm form-control" ng-click="ModalSample.onBasicModalClick()">Open Basic Modal</button>
+    </div>
+
+    <div class="form-group  col-xs-12 col-sm-6 col-md-4">
+        <button class="btn btn-default btn-sm form-control" ng-click="ModalSample.onTimerModalClick()">Open Timer Modal</button>
+    </div>
+
+    <div class="form-group  col-xs-12 col-sm-6 col-md-4">
+        <button class="btn btn-default btn-sm form-control" ng-click="ModalSample.onFormModalClick()">Open Form Modal</button>
+    </div>
+</div>
+<ni-modal ni-view="app/directives/modal/views/basic_modal/basic_modal.html" ni-bind="ModalSample" ni-alias="BasicModal"></ni-modal>
+<ni-modal ni-view="app/directives/modal/views/timer_modal/timer_modal.html" ni-bind="ModalSample" ni-alias="TimerModal"></ni-modal>
+<ni-modal ni-view="app/directives/modal/views/form_modal/form_modal.html" ni-bind="ModalSample" ni-alias="FormModal"></ni-modal>

@@ -1,0 +1,399 @@
+body
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.social
+{
+    position:fixed;
+    bottom:0;
+    right:0;
+    background: rgba(0,0,0,0.7);
+    border-top-left-radius: 5px;
+    padding: 10px;
+    z-index: 200;
+}
+
+.social a
+{
+    cursor:pointer;
+    color: white;
+}
+.social a:hover
+{
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+
+.ni-header
+{
+    padding: 15px;
+}
+
+.ni-header .logo
+{
+    height: 60px;
+    cursor: pointer;
+}
+
+.ni-header .ui.basic.primary.button
+{
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+.ni-header .ui.basic.primary.button:hover
+{
+    background: #2185D0!important;
+    color: white !important;
+    border:none;
+}
+
+.hover-grow:hover
+{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hover-shake:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.hover-jiggle:hover {
+    /* on hover - scale to this x,y size */
+    transform: scale(1.15,1.15);
+    /* property values: name, duration, iteration, timing-function */
+    animation: jiggle 0.5s infinite linear;
+}
+
+@keyframes jiggle {
+    /* start at 0deg and this scale size.
+       scale size is repeated here to maintain smooth scaling */
+    0% {transform: rotate(0deg) scale(1.15,1.15);}
+    /* midway rotate 2deg right */
+    50% {transform: rotate(2deg) scale(1.15,1.15);}
+    /* end rotate -2deg left */
+    100% {transform: rotate(-2deg) scale(1.15,1.15)}
+}
+
+.in-shadow
+{
+    -webkit-box-shadow: inset 0px 31px 19px -35px rgba(0,0,0,0.75), inset 0px -29px 18px -35px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 31px 19px -35px rgba(0,0,0,0.75), inset 0px -29px 18px -35px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 31px 19px -35px rgba(0,0,0,0.75), inset 0px -29px 18px -35px rgba(0,0,0,0.75);
+}
+
+.side-shadow
+{
+
+}
+
+.ni-menu
+{
+    text-align: center;
+    background: #2680d9;
+    color: white;
+    z-index: 100;
+}
+
+.ni-menu a
+{
+    display:inline-block;
+    padding: 25px 30px;
+    color:white;
+    font-size: 1.6rem;
+}
+.ni-menu a:hover
+{
+    background: white;
+    color: #2680d9;
+    text-decoration: underline;
+    cursor:pointer;
+
+    -webkit-box-shadow: 5px 0px 5px -6px rgba(0,0,0,0.75), -5px 0px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 0px 5px -6px rgba(0,0,0,0.75), -5px 0px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 5px 0px 5px -6px rgba(0,0,0,0.75), -5px 0px 5px -6px rgba(0,0,0,0.75);
+}
+
+.ni-body
+{
+    margin: 25px auto;
+}
+
+.ni-body .main-img
+{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index:1;
+    margin:0 auto;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.ni-body .banner
+{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.ni-body .banner .left-button,
+.ni-body .banner .right-button
+{
+    position:absolute;
+    z-index: 99;
+    top: 50%;
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.3);
+}
+
+.ni-body .banner .left-button
+{
+    left: 30px;
+}
+
+.ni-body .banner .right-button
+{
+    right: 30px;
+}
+
+.ni-body .banner .left-button:hover,
+.ni-body .banner .right-button:hover
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.ni-body .banner .content
+{
+    position: absolute;
+    top:10%;
+    left: 15%;
+    color: white;
+    z-index: 99;
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+.ni-body .tile
+{
+    border-bottom: 3px solid rgba(0,0,0, 0.3);
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    padding: 15px;
+}
+
+.ni-body .tile:last-of-type
+{
+    border-bottom: none;
+}
+
+.ni-body .tile img
+{
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+.tile .image
+{
+    height: 250px;
+    position: relative;
+}
+
+.tile td
+{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.tile .image.white > *:last-child
+{
+    background: rgba(255,255,255, 0.8);
+    color: black;
+}
+
+.tile .image > *:last-child
+{
+    display:none;
+    position:absolute;
+    top:25px;
+    bottom: 25px;
+    left:0;
+    width:100%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    margin-bottom: -1px;
+
+}
+
+.tile .image > *:last-child p
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.tile .image:hover > *:last-child
+{
+    display:inline-block;
+}
+
+.tile .image img
+{
+    height: 100%;
+}
+.tile .content
+{
+    padding: 10px 25px;
+}
+.ni-footer
+{
+    background: #2680d9;
+    height: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+}
+
+.ni-footer .logo
+{
+    height: 60px;
+}
+
+.ni-footer a
+{
+    color: white;
+    display:inline-block;
+    margin: 35px 15px 10px 15px;
+    cursor: pointer;
+}
+
+.title-1
+{
+    font-weight:bold;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.title-2
+{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p
+{
+    font-size: 1.3rem;
+}
+
+.white-band
+{
+    padding: 25px;
+    width: 100%;
+}
+
+.blue-band
+{
+    padding: 60px 25px;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("/assets/images/page_sample_1/back.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center center;
+    color: white;
+}
+
+.blue-band.alt
+{
+    background-image: url("/assets/images/page_sample_1/pull-up.jpeg");
+    color: black;
+}
+
+.blue-band p
+{
+    color: white;
+}
+
+
+@media only screen and (min-width : 480px) {
+
+}
+
+@media only screen and (min-width : 768px) {
+    .title-1
+    {
+        font-weight:bold;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .title-2
+    {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .ni-body .banner .content
+    {
+        top:10%;
+        left: 10%;
+        max-width: 50%;
+    }
+
+    p
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .ni-body .banner
+    {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .ni-body .banner .content
+    {
+        top:20%;
+        left: 15%;
+        max-width: 50%;
+    }
+}

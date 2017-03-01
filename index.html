@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Samples</title>
+
+        <base href="/" />
+
+        <!-- Vendor -->
+        <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css.map"/>
+        <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap-theme.min.css.map"/>
+
+        <!-- Core -->
+        <link rel="stylesheet" type="text/css" href="/app/core/css/ni-modal.css"/>
+        <link rel="stylesheet" type="text/css" href="/app/core/css/validation.css"/>
+        <link rel="stylesheet" type="text/css" href="/app/core/css/animation.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body ng-app="app">
+        <footer>
+
+            <ni-menu></ni-menu>
+            <ng-view></ng-view>
+            <ni-loading-modal ni-view="/app/directives/loading_modal/loading_modal_2.html"></ni-loading-modal>
+            <!--<ni-loading-modal ni-view="/app/directives/loading_modal/loading_modal.html"></ni-loading-modal>--.
+
+            <!-- Vendor -->
+            <script src="/vendor/angular/angular.min.js"></script>
+            <script src="/vendor/angular/angular-route.min.js"></script>
+            <script src="/vendor/jquery/jquery-3.1.1.min.js"></script>
+            <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+            <!-- App -->
+            <script src="/app/app.js"></script>
+            <script src="/app/route.js"></script>
+
+            <!-- Directives -->
+            <script src="/app/directives/menu/menu.controller.js"></script>
+            <script src="/app/directives/menu/menu.directive.js"></script>
+
+            <script src="/app/directives/modal/modal.directive.js"></script>
+
+            <script src="/app/directives/loading_modal/loading_modal.directive.js"></script>
+
+            <!-- Pages -->
+            <script src="/app/pages/home/home.controller.js"></script>
+            <script src="/app/pages/modal_sample/modal_sample.controller.js"></script>
+            <script src="/app/pages/loading_sample/loading_sample.controller.js"></script>
+            <script src="/app/pages/page_sample_3/page_sample_3.controller.js"></script>
+
+            <!-- Services -->
+            <script src="/app/services/validation.service.js"></script>
+            <script src="/app/services/loading.service.js"></script>
+
+            <script src="/app/pages/page_sample_3/page_sample_3.js"></script>
+
+        </footer>
+    </body>
+</html>
