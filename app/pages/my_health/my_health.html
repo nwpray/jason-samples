@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <hr>
+    <hr><hr>
 
     <h3>Dashboard Buttons</h3>
     <div class="row">
@@ -86,6 +86,78 @@
         </div>
     </div>
 
-    <hr>
+    <hr><hr>
+
+    <h3>iframe responsiveness</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>
+                I noticed some pretty significant issues with the iframes and their responsiveness. I am not entirely sure
+                what exactly we have access to change but I did find a fix with two code snippets you can run in the console.
+                So if we can find a way to apply these styles to the page, the responsiveness will mostly be fixed. However,
+                I also noticed that there are some media queries firing off that don't match the bootstrap column widths.
+                That will also have to be fixed. Looking through the html formatting my biggest suggestion would be to
+                reformat the way it was done because there are a mass of what look like unnecessary or unused elements
+                being used. If that is not an option, then at least the following fixes will fix a bulk of the problem.
+                I wrote them in jquery statements because it is easy to put into your chrome dev console and see the fix
+                work immediately.
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr>
+            <h4><strong>Main Frame</strong></h4>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>Bootstrap classes not being used/recognized.</p>
+            <h4>Solution</h4>
+            <p>Include the bootstrap css so the classes can be used</p>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>Main columns having issues resizing</p>
+            <h4>Solution</h4>
+            <p>Use bootstrap columns</p>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>Double Menu on xs Screens?</p>
+            <h4>Solution</h4>
+            <p>Remove it</p>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>.containter-fluid-large taking up too much space</p>
+            <h4>Solution</h4>
+            <p>set margins to '0 auto' to center</p>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>Float not being cleared somewhere in page so footer is coming up into content</p>
+            <h4>Solution</h4>
+            <p>Insert div with clearfix before footer</p>
+            <hr>
+
+            <img style="max-width: 600px; margin:0 auto; display:block;" src="/assets/images/my_health/top-fix.PNG"/>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr>
+            <h4><strong>iFrameResizer0</strong></h4>
+            <hr>
+
+            <h4>Problem</h4>
+            <p>Hardcoded Width and Height on angular-dashboard element</p>
+            <h4>Solution</h4>
+            <p>Replace all style with 'width: 100%' on angular-dashboard div</p>
+            <hr>
+
+            <img style="max-width: 600px; margin:0 auto; display:block;" src="/assets/images/my_health/iframe-fix.PNG"/>
+
+        </div>
+    </div>
+    <hr><hr>
 
 </div>
