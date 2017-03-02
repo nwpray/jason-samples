@@ -53,6 +53,15 @@ angular.module('app')
                 controller : 'PageSample3Controller'
             }
         )
+        .when
+        (
+            '/my_health',
+            {
+                templateUrl : '/app/pages/my_health/my_health.html',
+                controller : 'MyHealthController',
+                controllerAs : 'MyHealth'
+            }
+        )
         .otherwise
         (
             {

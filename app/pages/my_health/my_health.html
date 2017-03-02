@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="/app/pages/my_health/my_health.css"/>
+<div class="my-health container">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a onclick="$(this).parent().siblings('.panel-body').toggleClass('hidden');" href="">Loading Spinner</a>
+        </div>
+        <div class="panel-body hidden">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <img src="/assets/images/my_health/spinner-background.png"/>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <p>
+                        I would suggest putting a fixed partially transparent div behind your your loading spinner. This
+                        will block any further page interaction including scrolling. This also makes the fact that you are
+                        loading more noticable to the user. On some of the pages I had no idea it was loading something
+                        because the loading spinner had scrolled to the top.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+                    Something more like this
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+                    <div class="spinner-sample">
+                        <div class="spinner-pane">
+                            <div class="spinner">
+                                <div class="sk-circle">
+                                    <div class="sk-circle1 sk-child"></div>
+                                    <div class="sk-circle2 sk-child"></div>
+                                    <div class="sk-circle3 sk-child"></div>
+                                    <div class="sk-circle4 sk-child"></div>
+                                    <div class="sk-circle5 sk-child"></div>
+                                    <div class="sk-circle6 sk-child"></div>
+                                    <div class="sk-circle7 sk-child"></div>
+                                    <div class="sk-circle8 sk-child"></div>
+                                    <div class="sk-circle9 sk-child"></div>
+                                    <div class="sk-circle10 sk-child"></div>
+                                    <div class="sk-circle11 sk-child"></div>
+                                    <div class="sk-circle12 sk-child"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-content">
+                            <img src="/assets/images/my_health/login.PNG"/>
+                            <img src="/assets/images/my_health/login.PNG"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a onclick="$(this).parent().siblings('.panel-body').toggleClass('hidden');" href="">Dashboard Buttons</a>
+        </div>
+        <div class="panel-body hidden">
+            <div class="grid">
+                <div class="grid-item">
+                    <div class="grid-row">
+                        <button class="btn btn-block btn-fill">Release of Information</button>
+                    </div>
+                    <div class="grid-row">
+                        <button class="btn btn-block btn-fill">Advance Directive</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <button class="btn btn-block btn-fill">Find a Location</button>
+                </div>
+                <div class="grid-item">
+                    <button class="btn btn-block btn-fill">Find a Doctor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
