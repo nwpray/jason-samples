@@ -15,10 +15,8 @@ angular.module('app')
 
         LoadingOut();
 
-
         var menShadow = false;
-        var sample_3_ready = function()
-        {
+        var sample_3_ready = function(){
             $('.sample-page-3').animate({scrollTop: 0}, "slow");
 
             $(window).scroll(function()
@@ -54,8 +52,6 @@ angular.module('app')
                 4000
             );
         };
-
-
 
         function Initiate(){
             $('.main-logo').animate

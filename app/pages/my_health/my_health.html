@@ -1,63 +1,72 @@
 <link rel="stylesheet" type="text/css" href="/app/pages/my_health/my_health.css"/>
 <div class="my-health container">
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <a onclick="$(this).parent().siblings('.panel-body').toggleClass('hidden');" href="">Loading Spinner</a>
+    <h3>Loading Spinner</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <img src="/assets/images/my_health/spinner-background.png"/>
         </div>
-        <div class="panel-body hidden">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <img src="/assets/images/my_health/spinner-background.png"/>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <p>
-                        I would suggest putting a fixed partially transparent div behind your your loading spinner. This
-                        will block any further page interaction including scrolling. This also makes the fact that you are
-                        loading more noticable to the user. On some of the pages I had no idea it was loading something
-                        because the loading spinner had scrolled to the top.
-                    </p>
-                </div>
-            </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p>
+                I would suggest putting a fixed partially transparent div behind your your loading spinner. This
+                will block any further page interaction including scrolling. This also makes the fact that you are
+                loading more noticable to the user. On some of the pages I had no idea it was loading something
+                because the loading spinner had scrolled to the top.
+            </p>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-                    Something more like this
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
-                    <div class="spinner-sample">
-                        <div class="spinner-pane">
-                            <div class="spinner">
-                                <div class="sk-circle">
-                                    <div class="sk-circle1 sk-child"></div>
-                                    <div class="sk-circle2 sk-child"></div>
-                                    <div class="sk-circle3 sk-child"></div>
-                                    <div class="sk-circle4 sk-child"></div>
-                                    <div class="sk-circle5 sk-child"></div>
-                                    <div class="sk-circle6 sk-child"></div>
-                                    <div class="sk-circle7 sk-child"></div>
-                                    <div class="sk-circle8 sk-child"></div>
-                                    <div class="sk-circle9 sk-child"></div>
-                                    <div class="sk-circle10 sk-child"></div>
-                                    <div class="sk-circle11 sk-child"></div>
-                                    <div class="sk-circle12 sk-child"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="login-content">
-                            <img src="/assets/images/my_health/login.PNG"/>
-                            <img src="/assets/images/my_health/login.PNG"/>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+            Something more like this
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+            <div class="spinner-sample">
+                <div class="spinner-pane">
+                    <div class="spinner">
+                        <div class="sk-circle">
+                            <div class="sk-circle1 sk-child"></div>
+                            <div class="sk-circle2 sk-child"></div>
+                            <div class="sk-circle3 sk-child"></div>
+                            <div class="sk-circle4 sk-child"></div>
+                            <div class="sk-circle5 sk-child"></div>
+                            <div class="sk-circle6 sk-child"></div>
+                            <div class="sk-circle7 sk-child"></div>
+                            <div class="sk-circle8 sk-child"></div>
+                            <div class="sk-circle9 sk-child"></div>
+                            <div class="sk-circle10 sk-child"></div>
+                            <div class="sk-circle11 sk-child"></div>
+                            <div class="sk-circle12 sk-child"></div>
                         </div>
                     </div>
+                </div>
+                <div class="login-content">
+                    <img src="/assets/images/my_health/login.PNG"/>
+                    <img src="/assets/images/my_health/login.PNG"/>
                 </div>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <a onclick="$(this).parent().siblings('.panel-body').toggleClass('hidden');" href="">Dashboard Buttons</a>
+
+    <hr>
+
+    <h3>Dashboard Buttons</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <img src="/assets/images/my_health/dashboard-grid.PNG"/>
         </div>
-        <div class="panel-body hidden">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p>
+                Add some more styling to the buttons within the grid so the user knows they are clickable. Its hard to
+                tell right now. Is this something that can be changed? I noticed it was an IFrame coming from Intermountain.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right">
+            <p>Like this</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div class="grid">
                 <div class="grid-item">
                     <div class="grid-row">
@@ -76,5 +85,7 @@
             </div>
         </div>
     </div>
+
+    <hr>
 
 </div>
